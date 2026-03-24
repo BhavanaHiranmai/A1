@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en-US">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <body>
+    <div ng-app="myApplication" ng-controller="msgctrl">
+      <h1>{{message}}</h1>
+    </div>
+    <script>
+      const app = angular.module("myApplication", []);
+      app.controller("msgctrl", function ($scope) {
+        $scope.message = "NAMASTE, Welcome to AngularJS!";
+      });
+    </script>
+  </body>
+</html>
